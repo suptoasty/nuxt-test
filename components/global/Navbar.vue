@@ -1,7 +1,9 @@
 <template>
 	<v-app-bar app>
 		<div v-for="item in items" :key="item.title">
-			<v-btn text outlined nuxt :to="item.to">{{ item.title }}</v-btn>
+			<v-btn text outlined nuxt :to="{ name: item.name }">{{
+				item.title
+			}}</v-btn>
 		</div>
 	</v-app-bar>
 </template>
@@ -13,11 +15,13 @@ export default {
 			items: [
 				{
 					title: 'Home',
+					name: 'index',
 					to: '/',
 				},
 				{
 					title: 'Blog',
-					to: 'blog',
+					name: 'blog',
+					to: '/blog',
 				},
 			],
 		}

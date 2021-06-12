@@ -1,24 +1,30 @@
 <template>
 	<v-row>
-		<v-card
-			v-for="article in articles"
-			:key="article.slug"
-			:to="'blog/' + article.slug"
-			nuxt
-		>
-			<v-card-title>{{ article.title }}</v-card-title>
-			<v-card-subtitle>{{ article.description }}</v-card-subtitle>
-		</v-card>
+		<v-col v-for="article in articles" :key="article.slug">
+			<blog-card
+				:route="article.slug"
+				:title="article.title"
+				:description="article.description"
+			/>
+		</v-col>
 	</v-row>
 </template>
 
 <script>
+import BlogCard from '@/components/BlogCard.vue'
+
 export default {
 	layout: 'blog',
+	async asyncData({ $content }) {
+		const articles = await $content('articles')
+			.without(['body', 'dir', 'toc'])
+			.sortBy('createdAt', 'desc')
+			.fetch()
 
-	async asyncData({ $content, params }) {
-		const articles = await $content('articles').fetch()
 		return { articles }
+	},
+	components: {
+		BlogCard,
 	},
 }
 </script>

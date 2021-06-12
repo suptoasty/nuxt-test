@@ -1,3 +1,5 @@
-export const state = () => ({
+export const state = () => {
+  return {
     authenticated: false,
-})
+  }
+}

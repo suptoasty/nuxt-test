@@ -2,6 +2,10 @@
 title: First Nuxt Post
 description: Learning how to use @nuxt/content
 bacon: real good!!!
+author:
+    name: Jason
+    bio: I am programmer!
+    image: http://www.geeksandbeats.com/wp-content/uploads/2015/08/scared-batman.jpeg
 items:
     - test
     - of

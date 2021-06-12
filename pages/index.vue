@@ -1,6 +1,11 @@
 <template>
 	<v-row justify="center" align="center">
-		<nuxt-content :document="content" />
+		<v-col xl="12" lg="12" md="12" sm="12" xs="12">
+			<search-bar />
+		</v-col>
+		<v-col>
+			<nuxt-content :document="content" />
+		</v-col>
 	</v-row>
 </template>
 
