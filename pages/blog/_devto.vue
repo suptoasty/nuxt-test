@@ -12,31 +12,27 @@
 				<v-divider inset />
 			</v-col>
 			<v-col>
-				<nuxt-content :document="article" />
+				<div v-html="$md.render(article.body_markdown)"></div>
 			</v-col>
 			<v-col>
 				<author :author="article.author" v-if="!!article.author" />
 			</v-col>
 		</v-row>
 
-		<prev-next :next="next" :prev="prev" />
+		<!-- <prev-next :next="next" :prev="prev" /> -->
 	</v-container>
 </template>
 
 <script>
-import { formatDate } from '@/utils/devto'
+import { toPost, formatDate } from '@/utils/devto'
 
 export default {
-	async asyncData({ $content, params }) {
-		const article = await $content('articles', params.slug).fetch()
+	async asyncData({ $axios, params }) {
+		const article = toPost(
+			await $axios.$get(`https://dev.to/api/articles/${params.devto}`)
+		)
 
-		const [prev, next] = await $content('articles')
-			.only(['title', 'slug'])
-			.sortBy('createdAt', 'asc')
-			.surround(params.slug)
-			.fetch()
-
-		return { article, prev, next }
+		return { article }
 	},
 	methods: {
 		formatDate,

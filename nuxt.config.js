@@ -1,4 +1,5 @@
 import colors from 'vuetify/es5/util/colors'
+require('dotenv').config()
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target
@@ -42,7 +43,22 @@ export default {
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
     // 'nuxt-i18n',
+    '@nuxtjs/proxy',
+    '@nuxtjs/markdownit',
+    '@nuxtjs/dotenv',
   ],
+
+  dotenv: {
+    path: '.env.local',
+  },
+
+  markdownit: {
+    runtime: true,
+    preset: 'default',
+    linkify: true,
+    breaks: true,
+    // use: ['markdown-it-div', 'markdown-it-attrs'],
+  },
 
   // i18n: {
   //   locales: ['en', 'es'],
@@ -53,7 +69,27 @@ export default {
   // },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  axios: {
+    // baseURL: "",
+    proxy: {
+      // '/devto/': { target: 'https://dev.to', pathRewrite: { '^/api/': '' } },
+      // '/devto/': 'https://dev.to/api',
+    },
+    common: {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': 'application/json',
+      Authorization: 'Bearer ' + process.env.NUXT_ENV_DEVTO_API_KEY,
+      'X-Requested-With': 'XMLHttpRequest',
+      crossDomain: true,
+      'Access-Control-Allow-Origin': '*',
+    },
+    delete: {},
+    get: {},
+    head: {},
+    post: {},
+    put: {},
+    patch: {},
+  },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {

@@ -4,7 +4,11 @@ export const state = () => ({
   authenticated: false,
 })
 
-export const getters = () => ({})
+export const getters = () => ({
+  isAdmin: (state) => {
+    return state.authenticated
+  },
+})
 
 export const actions = {
   login({ commit }) {

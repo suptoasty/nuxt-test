@@ -1,6 +1,11 @@
 <template>
 	<div>
-		<v-text-field v-model="searchQuery" type="search" />
+		<v-text-field
+			v-model="searchQuery"
+			type="search"
+			solo
+			label="Search Blog"
+		/>
 		<ul v-if="articles.length">
 			<li v-for="article of articles" :key="article.slug">
 				<NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">

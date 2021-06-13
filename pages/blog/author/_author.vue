@@ -19,9 +19,11 @@
 </template>
 
 <script>
+import { toPost, formatDate } from '@/utils/devto'
+
 export default {
-	async asyncData({ $content, params }) {
-		const articles = await $content('articles', params.slug)
+	async asyncData({ $content, $axios, params }) {
+		let articles = await $content('articles', params.slug)
 			.where({
 				'author.name': {
 					$regex: [params.author, 'i'],
@@ -31,13 +33,20 @@ export default {
 			.sortBy('createdAt', 'asc')
 			.fetch()
 
+		let devtoArticles = await $axios.$get(
+			'https://dev.to/api/articles/?username=suptoasty'
+		)
+
+		if (devtoArticles.length > 0) {
+			articles = articles.concat(
+				devtoArticles.map((article) => toPost(article))
+			)
+		}
+
 		return { articles }
 	},
 	methods: {
-		formatDate(date) {
-			const options = { year: 'numeric', month: 'long', day: 'numeric' }
-			return new Date(date).toLocaleDateString('en', options)
-		},
+		formatDate,
 	},
 }
 </script>

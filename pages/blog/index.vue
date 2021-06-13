@@ -1,7 +1,16 @@
 <template>
 	<v-row>
+		<!-- <v-btn @click="createPost">Add Post</v-btn> -->
 		<v-col v-for="article in articles" :key="article.slug">
+			<devto-card
+				v-if="!!article.id"
+				:id="article.id"
+				:title="article.title"
+				:description="article.description"
+			/>
+
 			<blog-card
+				v-else
 				:route="article.slug"
 				:title="article.title"
 				:description="article.description"
@@ -11,20 +20,32 @@
 </template>
 
 <script>
-import BlogCard from '@/components/BlogCard.vue'
+import { toPost } from '@/utils/devto'
 
 export default {
 	layout: 'blog',
-	async asyncData({ $content }) {
-		const articles = await $content('articles')
+	async asyncData({ $content, $axios }) {
+		let articles = await $content('articles')
 			.without(['body', 'dir', 'toc'])
 			.sortBy('createdAt', 'desc')
 			.fetch()
 
+		let devtoArticles = await $axios.$get(
+			'https://dev.to/api/articles/?username=suptoasty'
+		)
+
+		if (devtoArticles.length > 0) {
+			articles = articles.concat(
+				devtoArticles.map((article) => toPost(article))
+			)
+		}
+
 		return { articles }
 	},
-	components: {
-		BlogCard,
+	methods: {
+		createPost() {
+			console.log('figure out dynamic in ssg???')
+		},
 	},
 }
 </script>

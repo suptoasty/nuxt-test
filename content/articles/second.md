@@ -2,7 +2,7 @@
 title: Second Post
 description: A test for fetching collections
 author: 
-    name: Jason
+    name: Jason Lonsinger
     bio: Am programmer
     image: https://jasonlonsinger.files.wordpress.com/2019/10/annotation-2019-10-31-164021-1.png?w=1024
 ---
