@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<img
+		<v-img
 			id="img"
 			src="https://assets.codepen.io/2621168/abstract.jpg"
 			style="
