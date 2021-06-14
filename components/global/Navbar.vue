@@ -40,6 +40,21 @@
 							{{ route.title }}
 						</v-list-item-title>
 					</v-list-item>
+
+					<v-divider></v-divider>
+					<v-subheader>Actions</v-subheader>
+					<v-list-item>
+						<template>
+							<v-list-item-action>
+								<v-switch
+									:v-model="$vuetify.theme.dark"
+									@click="$vuetify.theme.dark = !$vuetify.theme.dark"
+									color="primary"
+								/>
+							</v-list-item-action>
+						</template>
+						<v-list-item-title>Toggle Theme</v-list-item-title>
+					</v-list-item>
 				</v-list>
 			</v-menu>
 		</v-row>
@@ -69,5 +84,3 @@ export default {
 }
 </script>
 
-<style>
-</style>

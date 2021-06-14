@@ -2,6 +2,7 @@
 title: First Nuxt Post
 description: Learning how to use @nuxt/content
 bacon: real good!!!
+featured: false
 author:
     name: Jason Lonsinger
     bio: I am programmer!

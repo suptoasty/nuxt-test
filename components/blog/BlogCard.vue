@@ -2,10 +2,9 @@
 	<v-card
 		:to="{ name: 'blog-slug', params: { slug: route } }"
 		nuxt
-		outlined
-		tile
 		min-width="300"
 		min-height="300"
+		class="ma-2 pa-2"
 	>
 		<v-card-title>{{ title }}</v-card-title>
 		<v-card-subtitle>{{ description }}</v-card-subtitle>
@@ -34,6 +33,3 @@ export default {
 	},
 }
 </script>
-
-<style>
-</style>

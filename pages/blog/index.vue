@@ -23,7 +23,7 @@
 import { toPost } from '@/utils/devto'
 
 export default {
-	layout: 'blog',
+	// layout: 'blog',
 	async asyncData({ $content, $axios }) {
 		let articles = await $content('articles')
 			.without(['body', 'dir', 'toc'])
@@ -49,6 +49,3 @@ export default {
 	},
 }
 </script>
-
-<style>
-</style>

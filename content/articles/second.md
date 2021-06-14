@@ -1,6 +1,7 @@
 ---
 title: Second Post
 description: A test for fetching collections
+featured: false
 author: 
     name: Jason Lonsinger
     bio: Am programmer
