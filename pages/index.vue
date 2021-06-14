@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<v-container>
 		<v-img
 			id="img"
 			src="https://assets.codepen.io/2621168/abstract.jpg"
@@ -11,29 +11,16 @@
 				top: 0;
 				left: 0;
 			"
+			v-if="!$vuetify.breakpoint.mobile"
 		/>
-		<v-card id="card" class="ma-2 pa-2" max-width="400px">
-			<!-- <v-card-title>Title</v-card-title>
-				<v-card-text>text</v-card-text>
-				<v-card-actions
-					><v-btn><v-icon>mdi-delete</v-icon></v-btn></v-card-actions
-				> -->
+		<v-card id="card" class="ma-2 pa-2">
 			<v-row justify="center" align="center" class="ma-2 pa-2">
-				<v-col xl="12" lg="12" md="12" sm="12" xs="12" class="ma-2 pa-2">
-					<search-bar />
-				</v-col>
 				<v-col xl="12" lg="12" md="12" sm="12" xs="12" class="ma-2 pa-2">
 					<nuxt-content :document="content" />
 				</v-col>
-
-				<!-- <v-col>
-						<v-text-field solo background-color="linear-gradient(red, blue)" />
-
-						<v-btn color="primary"><v-icon>mdi-delete</v-icon></v-btn>
-					</v-col> -->
 			</v-row>
 		</v-card>
-	</div>
+	</v-container>
 </template>
 
 <script>
@@ -42,86 +29,55 @@ export default {
 		const content = await $content('home').fetch()
 		return { content }
 	},
-
-	beforeMount() {
-		// this.$anime
-		// 	.timeline({
-		// 		delay: 0,
-		// 		duration: 0,
-		// 	})
-		// 	.add({
-		// 		targets: '#card',
-		// 		backdropFilter: 'blur(0px)',
-		// 		opacity: 0,
-		// 		duration: 500,
-		// 	})
-		// 	.add({ targets: '#img', translateX: '-20%', opacity: 0, duration: 0 })
-	},
-
 	mounted() {
-		this.$anime
-			.timeline({
-				delay: 0,
-				duration: 0,
-			})
-			.add({
-				targets: '#card',
-				backdropFilter: 'blur(0px)',
-				opacity: 0,
-				duration: 0,
-			})
-			.add({ targets: '#img', translateX: '-20%', opacity: 0, duration: 0 })
-
-		this.$anime
-			.timeline({
-				delay: 750,
-			})
-
-			.add({
-				targets: '#img',
-				translateX: ['-20%', '0%'],
-				opacity: [0, 1],
-				duration: 3000,
-				easing: 'easeOutExpo',
-			})
-			.add(
-				{
+		if (!this.$vuetify.breakpoint.mobile) {
+			this.$anime
+				.timeline({
+					delay: 0,
+					duration: 0,
+				})
+				.add({
 					targets: '#card',
-					keyframes: [
-						{ opacity: [0, 1], duration: 2000 },
-						{
-							backdropFilter: ['blur(0px)', 'blur(4.5px)'],
-							translateX: '50%',
-							duration: 2000,
-						},
-					],
-					ease: 'easeOutExpo',
-				},
-				'-=2500'
-			)
-		// .add({
-		// 	targets: '#card',
-		// 	keyframes: [
-		// 		{
-		// 			translateX: '-20%',
-		// 			opacity: [0, 1],
-		// 			duration: 0,
-		// 			backdropFilter: ['blur(0px)'],
-		// 		},
-		// 	],
-		// })
-		// .add({
-		// 	targets: '#card',
-		// 	keyframes: [
-		// 		{
-		// 			translateX: ['-20%', '0%'],
-		// 			backdropFilter: ['blur(0px)', 'blur(4.5px)'],
-		// 			duration: 500,
-		// 			easing: 'easeOutInExpo',
-		// 		},
-		// 		{ translateY: '+20%', delay: 500, ease: 'linear' },
-		// 	],
-		// })
+					backdropFilter: 'blur(0px)',
+					opacity: 0,
+					maxWidth: '50vw',
+					translateX: '-20%',
+					duration: 0,
+				})
+				.add({ targets: '#img', translateX: '-20%', opacity: 0, duration: 0 })
+
+			this.$anime
+				.timeline({
+					delay: 750,
+				})
+
+				.add({
+					targets: '#img',
+					translateX: ['-20%', '0%'],
+					opacity: [0, 1],
+					duration: 3000,
+					easing: 'easeOutExpo',
+				})
+				.add(
+					{
+						targets: '#card',
+						keyframes: [
+							{
+								opacity: [0, 1],
+								translateX: ['-20%', '0%'],
+								duration: 2000,
+							},
+							{
+								backdropFilter: ['blur(0px)', 'blur(4.5px)'],
+								maxWidth: ['50vw', '100vw'],
+								duration: 1500,
+							},
+						],
+						easing: 'easeOutExpo',
+					},
+					'-=2500'
+				)
+		}
 	},
 	methods: {
 		lighten() {
