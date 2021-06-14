@@ -77,6 +77,37 @@ export default {
 					},
 					'-=2500'
 				)
+		} else {
+			this.$anime
+				.timeline({
+					delay: 0,
+					duration: 0,
+				})
+				.add({
+					targets: '#card',
+					backdropFilter: 'blur(0px)',
+					opacity: 0,
+					duration: 0,
+				})
+
+			this.$anime
+				.timeline({
+					easing: 'easeOutExpo',
+					delay: 500,
+				})
+				.add({
+					targets: '#card',
+					keyframes: [
+						{
+							opacity: [0, 1],
+							duration: 1500,
+						},
+						{
+							backdropFilter: ['blur(0px)', 'blur(4.5px)'],
+							duration: 1500,
+						},
+					],
+				})
 		}
 	},
 	methods: {
