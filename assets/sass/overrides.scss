@@ -45,11 +45,11 @@
 }
 
 .v-card.v-sheet.theme--light {
-  background: $light-theme-card-background;
+  background: $card-background-light;
 }
 
 .v-card.v-sheet.theme--dark {
-  background: $dark-theme-card-background;
+  background: $card-background-dark;
 }
 
 .v-main {
@@ -58,4 +58,34 @@
   background-size: auto;
   background: linear-gradient(90deg, red, blue);
   // background-image: url('https://picsum.photos/1920/1080.jpg');
+}
+
+.v-app-bar {
+  border-bottom: $app-bar-border;
+  box-shadow: $app-bar-box-shadow;
+  backdrop-filter: $app-bar-backdrop-filter;
+  border-radius: $app-bar-border-radius;
+}
+
+.v-app-bar.v-app-bar--is-scrolled {
+  border-bottom: $app-bar-border;
+  box-shadow: $app-bar-box-shadow;
+  backdrop-filter: $app-bar-backdrop-filter;
+  border-radius: $app-bar-border-radius;
+  opacity: 0.85;
+}
+
+.v-app-bar.v-app-bar--is-scrolled.theme--light {
+  background: $app-bar-background-scrolled-light;
+}
+
+.v-app-bar.v-app-bar--is-scrolled.theme--dark {
+  background: $app-bar-background-scrolled-dark;
+}
+
+.v-app-bar.theme--light {
+  background: $app-bar-background-light;
+}
+.v-app-bar.theme--dark {
+  background: $app-bar-background-dark;
 }

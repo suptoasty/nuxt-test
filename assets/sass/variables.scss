@@ -49,28 +49,56 @@ $headings: (
   ),
 );
 
-// general
+// general //
+
+/* card */
 $card-border-radius: 3em !default;
 $card-box-shadow: 10px 10px 10px -1px rgba(46, 54, 68, 0.2) !default;
 $card-backdrop-filter: blur(4.5px) !default;
 $card-border: solid 3px transparent !default;
 
-// dark theme vars
-$dark-theme-card-background: linear-gradient(
-    45deg,
-    rgb(0, 0, 0, 0.4) 0%,
-    rgba(128, 128, 128, 0.1) 100%
-  )
-  padding-box !default;
-// $dark-theme-card-lighten: ;
-// $dark-theme-card-darken: ;
-
-// light theme vars
-$light-theme-card-background: linear-gradient(
+$card-background-light: linear-gradient(
     45deg,
     rgb(255, 255, 255, 0.4) 0%,
     rgba(255, 255, 255, 0.1) 100%
   )
   padding-box !default;
-// $light-theme-card-lighten: ;
-// $light-theme-card-darken: ;
+$card-background-dark: linear-gradient(
+    45deg,
+    rgb(0, 0, 0, 0.4) 0%,
+    rgba(128, 128, 128, 0.1) 100%
+  )
+  padding-box !default;
+// $card-lighten-dark: ;
+// $card-darken-dark: ;
+// $card-lighten-light: ;
+// $card-darken-light: ;
+
+/* app-bar */
+
+$app-bar-border-radius: 0em !default;
+$app-bar-box-shadow: 0px 10px 10px -1px rgba(46, 54, 68, 0.2) !default;
+$app-bar-backdrop-filter: blur(4.5px) !default;
+$app-bar-border: solid 3px transparent !default;
+$app-bar-opacity: 0 !default;
+$app-bar-opacity-scrolled: 0 !default;
+
+$app-bar-background-dark: linear-gradient() padding-box !default;
+$app-bar-background-light: linear-gradient(
+    45deg,
+    rgb(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  )
+  padding-box !default;
+$app-bar-background-scrolled-dark: linear-gradient(
+    90deg,
+    rgb(0, 0, 0, 0.4) 0%,
+    rgba(128, 128, 128, 0.1) 100%
+  )
+  padding-box !default;
+$app-bar-background-scrolled-light: linear-gradient(
+    45deg,
+    rgb(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  )
+  padding-box !default;
