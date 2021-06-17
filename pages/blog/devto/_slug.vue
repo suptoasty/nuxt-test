@@ -29,7 +29,7 @@ import { toPost, formatDate } from '@/utils/devto'
 export default {
 	async asyncData({ $axios, params }) {
 		const article = toPost(
-			await $axios.$get(`https://dev.to/api/articles/${params.devto}`)
+			await $axios.$get(`https://dev.to/api/articles/${params.slug}`)
 		)
 
 		return { article }

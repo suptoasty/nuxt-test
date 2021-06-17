@@ -29,7 +29,7 @@ createdAt: 2020-12-14T14:48:00.000Z
 </p>
 
 <p>
-    <img src="http://localhost:3000/images/tools-degree-plan.png" caption="" ref=""></img>
+    <dynamic-image src="tools-degree-plan.png" caption="" ref=""></dynamic-image>
 </p>
 
 <p></p>
