@@ -1,40 +1,48 @@
 <template>
-	<v-container>
-		<v-card class="back">
+	<v-row>
+		<v-card class="v-card--glass v-card-background">
 			<v-container fluid>
 				<v-row class="pa-4">
 					<navbar-card class="pa-4" />
 					<v-col cols="12">
 						<h1>Personal Projects</h1>
 					</v-col>
-				</v-row>
-			</v-container>
-		</v-card>
-
-		<v-card class="back" id="grid">
-			<v-container fluid>
-				<v-row class="ma-1">
-					<v-col xl="12" lg="12" md="12" sm="12" xs="12" class="ma-2 pa-2">
+					<v-col>
 						<search-bar />
 					</v-col>
-					<v-col v-for="article in articles" :key="article.slug">
-						<devto-card
-							v-if="!!article.id"
-							:id="article.id"
-							:title="article.title"
-							:description="article.description"
-						/>
-						<blog-card
-							v-else
-							:route="article.slug"
-							:title="article.title"
-							:description="article.description"
-						/>
+				</v-row>
+				<v-row justify="center" align="center" align-content="center">
+					<v-col
+						align-self="center"
+						xl="2"
+						lg="4"
+						md="6"
+						sm="12"
+						xs="12"
+						v-for="article in articles"
+						:key="article.slug"
+					>
+						<v-lazy>
+							<devto-card
+								v-if="!!article.id"
+								:article="article"
+								:id="article.id"
+								:title="article.title"
+								:description="article.description"
+							/>
+							<blog-card
+								v-else
+								:article="article"
+								:route="article.slug"
+								:title="article.title"
+								:description="article.description"
+							/>
+						</v-lazy>
 					</v-col>
 				</v-row>
 			</v-container>
 		</v-card>
-	</v-container>
+	</v-row>
 </template>
 
 <script>
@@ -97,11 +105,6 @@ export default {
 }
 </script>
 
-
-<style lang="scss" scoped>
-.v-card.v-sheet.back {
-	backdrop-filter: blur(10px);
-	border-radius: 0.5em;
-	border: solid 0px transparent;
-}
+<style lang='scss'>
+@import '@/assets/sass/overrides.scss';
 </style>

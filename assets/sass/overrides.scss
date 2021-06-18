@@ -12,6 +12,7 @@
 @import 'vuetify-material/modal';
 @import 'vuetify-material/map';
 @import 'vuetify-material/chip';
+@import 'vuetify-material/app';
 
 .v-btn.v-size--default .v-btn.v-size--large {
   &:not(.v-btn--icon):not(.v-btn--fab) {
@@ -37,54 +38,10 @@
   background-color: #eee;
 }
 
-.v-card.v-sheet {
-  border: $card-border;
-  box-shadow: $card-box-shadow;
-  backdrop-filter: $card-backdrop-filter;
-  border-radius: $card-border-radius;
-}
-
-.v-card.v-sheet.theme--light {
-  background: $card-background-light;
-}
-
-.v-card.v-sheet.theme--dark {
-  background: $card-background-dark;
-}
-
-.v-main {
-  // background: linear-gradient(to right, blue, red);
-  background-repeat: no-repeat;
-  background-size: auto;
-  background: linear-gradient(90deg, red, blue);
-  // background-image: url('https://picsum.photos/1920/1080.jpg');
-}
-
-.v-app-bar {
-  border-bottom: $app-bar-border !important;
-  box-shadow: $app-bar-box-shadow;
-  backdrop-filter: $app-bar-backdrop-filter;
-  border-radius: $app-bar-border-radius;
-}
-
-.v-app-bar.v-app-bar--is-scrolled {
-  border-bottom: $app-bar-border-scrolled !important;
-  box-shadow: $app-bar-box-shadow;
-  backdrop-filter: $app-bar-backdrop-filter;
-  border-radius: $app-bar-border-radius;
-}
-
-.v-app-bar.v-app-bar--is-scrolled.theme--light {
-  background: $app-bar-background-scrolled-light !important;
-}
-
-.v-app-bar.v-app-bar--is-scrolled.theme--dark {
-  background: $app-bar-background-scrolled-dark !important;
-}
-
-.v-app-bar.theme--light {
-  background: $app-bar-background-light !important;
-}
-.v-app-bar.theme--dark {
-  background: $app-bar-background-dark !important;
-}
+// .v-main {
+//   // background: linear-gradient(to right, blue, red);
+//   background-repeat: no-repeat;
+//   background-size: auto;
+//   background: linear-gradient(90deg, red, blue);
+//   // background-image: url('https://picsum.photos/1920/1080.jpg');
+// }

@@ -1,0 +1,19 @@
+.v-application {
+  .v-application--wrap {
+    background-image: url('~/static/1080.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    .v-main {
+      .v-main__wrap {
+        .container.contaner-fluid {
+          .row {
+            .v-card.v-sheet {
+            }
+          }
+        }
+      }
+    }
+  }
+}

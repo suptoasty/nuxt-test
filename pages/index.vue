@@ -1,5 +1,5 @@
 <template>
-	<v-container>
+	<v-row style="height: 100%">
 		<v-img
 			id="img"
 			src="https://assets.codepen.io/2621168/abstract.jpg"
@@ -13,7 +13,7 @@
 			"
 			v-if="!$vuetify.breakpoint.mobile"
 		/>
-		<v-card class="back">
+		<v-card class="v-card--glass v-card-background">
 			<v-container fluid>
 				<v-row class="pa-4">
 					<navbar-card class="pa-4" />
@@ -37,30 +37,17 @@
 					<v-col>
 						<nuxt-content :document="content" />
 					</v-col>
-					<!-- <v-col cols="4" v-for="i in 3" :key="i">
-						<v-card style="border-radius: 0em">
-							<v-card-title>Card Title!</v-card-title>
-							<v-card-text>
-								Lorem Ipsum is simply dummy text of the printing and typesetting
-								industry. Lorem Ipsum has been the industry's standard dummy
-								text ever since the 1500s, when an unknown printer took a galley
-								of type and scrambled it to make a type specimen book. It has
-								survived not only five centuries, but also the leap into
-								electronic typesetting.
-							</v-card-text>
-						</v-card>
-					</v-col> -->
 				</v-row>
 			</v-container>
 		</v-card>
-		<v-card id="card" class="ma-2 pa-2">
+		<!-- <v-card id="card" class="ma-2 pa-2">
 			<v-row justify="center" align="center" class="ma-2 pa-2">
 				<v-col xl="12" lg="12" md="12" sm="12" xs="12" class="ma-2 pa-2">
 					<nuxt-content :document="content" />
 				</v-col>
 			</v-row>
-		</v-card>
-	</v-container>
+		</v-card> -->
+	</v-row>
 </template>
 
 <script>
@@ -197,14 +184,10 @@ export default {
 <style lang='scss'>
 @import '@/assets/sass/overrides.scss';
 
-.v-card.v-sheet.back {
-	backdrop-filter: blur(10px);
-	border-radius: 0.5em;
-	border: solid 0px transparent;
-}
-
-.v-main {
-	background-image: url('~/static/1080.jpg');
-	// background-image: url('https://picsum.photos/1920/1080.jpg');
-}
+// .v-main {
+// 	background-image: url('~/static/1080.jpg');
+// 	background-repeat: no-repeat;
+// 	background-size: cover;
+// 	background-attachment: fixed;
+// }
 </style>

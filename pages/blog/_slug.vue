@@ -1,26 +1,36 @@
 <template>
-	<v-container fluid fill-height>
-		<v-row align="center" justify="center">
-			<v-col lg="12" md="12" sm="12" xs="12">
-				<h1>
-					{{ article.title }}
-				</h1>
-				<span>
-					<h4>{{ article.description }}</h4>
-					<h4>Created On: {{ formatDate(article.createdAt) }}</h4>
-				</span>
-				<v-divider inset />
-			</v-col>
-			<v-col>
-				<nuxt-content :document="article" />
-			</v-col>
-			<v-col>
-				<author :author="article.author" v-if="!!article.author" />
-			</v-col>
-		</v-row>
+	<v-row class="heigth: 100%">
+		<v-card class="v-card--glass v-card-background">
+			<v-container fluid>
+				<v-row align-content="center" align="center" justify="center">
+					<v-col lg="12" md="12" sm="12" xs="12">
+						<h1>
+							{{ article.title }}
+						</h1>
+						<span>
+							<h4>{{ article.description }}</h4>
+							<h4>Created On: {{ formatDate(article.createdAt) }}</h4>
+						</span>
+						<v-divider inset />
+					</v-col>
+				</v-row>
+				<v-row justify="center">
+					<v-col cols="12">
+						<nuxt-content :document="article" />
+					</v-col>
+				</v-row>
+				<v-row justify="center" align="center" align-content="center">
+					<v-col cols="12">
+						<author :author="article.author" v-if="!!article.author" />
+					</v-col>
+				</v-row>
 
-		<prev-next :next="next" :prev="prev" />
-	</v-container>
+				<!-- <v-row>
+					<prev-next :next="next" :prev="prev" />
+				</v-row> -->
+			</v-container>
+		</v-card>
+	</v-row>
 </template>
 
 <script>
@@ -44,3 +54,6 @@ export default {
 }
 </script>
 
+<style lang='scss'>
+@import '@/assets/sass/overrides.scss';
+</style>
