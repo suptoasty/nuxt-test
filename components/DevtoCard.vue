@@ -1,6 +1,6 @@
 <template>
 	<v-card
-		:to="{ name: 'blog-devto', params: { devto: id } }"
+		:to="{ name: 'blog-devto-slug', params: { slug: id } }"
 		nuxt
 		outlined
 		tile
