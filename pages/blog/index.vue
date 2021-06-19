@@ -57,15 +57,15 @@ export default {
 			.sortBy('createdAt', 'desc')
 			.fetch()
 
-		let devtoArticles = await $axios.$get(
-			'https://dev.to/api/articles/?username=suptoasty'
-		)
+		// let devtoArticles = await $axios.$get(
+		// 	'https://dev.to/api/articles/?username=suptoasty'
+		// )
 
-		if (devtoArticles.length > 0) {
-			// articles = articles.concat(
-			// 	devtoArticles.map((article) => toPost(article))
-			// )
-		}
+		// if (devtoArticles.length > 0) {
+		// 	// articles = articles.concat(
+		// 	// 	devtoArticles.map((article) => toPost(article))
+		// 	// )
+		// }
 
 		return { articles }
 	},

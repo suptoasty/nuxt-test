@@ -11,3 +11,5 @@ export const truncateText = (string, wordLimit = 20) => {
 
   return content
 }
+
+export const clamp = (value, min, max) => Math.min(Math.max(value, min), max)
