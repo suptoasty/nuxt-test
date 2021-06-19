@@ -15,8 +15,7 @@
 		></v-img>
 		<v-card-title>{{ title }}</v-card-title>
 		<v-card-subtitle>
-			{{ descriptionLimit() }}
-			{{ truncateText(article.description, descriptionLimit()) }}
+			{{ truncateText(article.description, 15) }}
 		</v-card-subtitle>
 	</v-card>
 </template>
@@ -53,18 +52,8 @@ export default {
 			maxImageHeight: '300px',
 		}
 	},
-	computed: {},
 	methods: {
 		truncateText,
-		descriptionLimit() {
-			return (
-				this.$refs?.card?.$el?.clientWidth /
-				parseFloat(getComputedStyle(document.documentElement).fontSize)
-			)
-		},
-	},
-	mounted() {
-		this.descriptionLimit()
 	},
 }
 </script>

@@ -62,9 +62,9 @@ export default {
 		)
 
 		if (devtoArticles.length > 0) {
-			articles = articles.concat(
-				devtoArticles.map((article) => toPost(article))
-			)
+			// articles = articles.concat(
+			// 	devtoArticles.map((article) => toPost(article))
+			// )
 		}
 
 		return { articles }

@@ -1,7 +1,13 @@
 <template>
 	<v-row>
 		<v-row class="pa-2" v-if="!$vuetify.breakpoint.mobile">
-			<v-icon large>mdi-delete</v-icon>
+			<v-btn icon nuxt :to="{ name: 'index' }" class="mr-2">
+				<v-icon large>mdi-home</v-icon>
+			</v-btn>
+			<div>
+				<h2>Jason Lonsinger</h2>
+				<h5 class="subtitle-2">- Software Developer</h5>
+			</div>
 			<v-spacer />
 
 			<v-btn
@@ -16,11 +22,17 @@
 				{{ route.title }}
 			</v-btn>
 		</v-row>
-		<v-row v-else>
-			<v-icon large>mdi-delete</v-icon>
+		<v-row class="pa-2" v-else>
+			<v-btn icon nuxt :to="{ name: 'index' }" class="mr-2">
+				<v-icon large>mdi-home</v-icon>
+			</v-btn>
+			<div>
+				<h2>Jason Lonsinger</h2>
+				<h5 class="subtitle-2">- Software Developer</h5>
+			</div>
 			<v-spacer />
 
-			<v-menu bottom right open-on-hover offset-y>
+			<v-menu bottom right offset-y>
 				<template v-slot:activator="{ on, attrs }">
 					<v-btn icon v-bind="attrs" v-on="on">
 						<v-icon dense>mdi-dots-vertical</v-icon>
@@ -34,7 +46,7 @@
 						nuxt
 						:to="{ name: route.name }"
 					>
-						<v-icon dense>{{ route.icon }}</v-icon>
+						<v-icon dense class="mr-1">{{ route.icon }}</v-icon>
 						<v-list-item-title>
 							{{ route.title }}
 						</v-list-item-title>
@@ -43,7 +55,7 @@
 					<v-divider></v-divider>
 					<v-subheader>Actions</v-subheader>
 					<v-list-item @click="toggleTheme">
-						<v-list-item-icon>
+						<v-list-item-icon class="mr-0">
 							<v-icon>mdi-theme-light-dark</v-icon>
 						</v-list-item-icon>
 						<v-list-item-title>Toggle Theme</v-list-item-title>

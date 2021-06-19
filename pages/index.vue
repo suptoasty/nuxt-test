@@ -1,6 +1,6 @@
 <template>
 	<v-row style="height: 100%">
-		<v-img
+		<!-- <v-img
 			id="img"
 			src="https://assets.codepen.io/2621168/abstract.jpg"
 			style="
@@ -12,28 +12,15 @@
 				left: 0;
 			"
 			v-if="!$vuetify.breakpoint.mobile"
-		/>
-		<v-card class="v-card--glass v-card-background">
+		/> -->
+		<v-card class="v-card--glass v-card-background pa-4">
 			<v-container fluid>
-				<v-row class="pa-4">
-					<navbar-card class="pa-4" />
-					<v-col cols="12">
-						<h1>This is a test</h1>
+				<v-row>
+					<v-col>
+						<navbar-card />
 					</v-col>
-					<v-col cols="12">
-						<v-card-text>
-							Lorem Ipsum is simply dummy text of the printing and typesetting
-							industry. Lorem Ipsum has been the industry's standard dummy text
-							ever since the 1500s, when an unknown printer took a galley of
-							type and scrambled it to make a type specimen book. It has
-							survived not only five centuries, but also the leap into
-							electronic typesetting, remaining essentially unchanged. It was
-							popularised in the 1960s with the release of Letraset sheets
-							containing Lorem Ipsum passages, and more recently with desktop
-							publishing software like Aldus PageMaker including versions of
-							Lorem Ipsum.
-						</v-card-text>
-					</v-col>
+				</v-row>
+				<v-row>
 					<v-col>
 						<nuxt-content :document="content" />
 					</v-col>

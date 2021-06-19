@@ -1,7 +1,13 @@
 <template>
-	<v-row class="heigth: 100%">
-		<v-card class="v-card--glass v-card-background">
+	<v-row class="height: 100% !important">
+		<v-card
+			class="v-card--glass v-card-background"
+			style="height: 100% !important"
+		>
 			<v-container fluid>
+				<v-row class="ma-1">
+					<navbar-card class="pa-4" />
+				</v-row>
 				<v-row align-content="center" align="center" justify="center">
 					<v-col lg="12" md="12" sm="12" xs="12">
 						<h1>
