@@ -15,9 +15,9 @@ Using the mini-max algorithm, I was able to create a game of tic-tac-toe in java
 
 <v-img src="https://jasonlonsinger.files.wordpress.com/2019/10/annotation-2019-10-31-165449.png?w=1024"></v-img>
 
-<v-img src="https://jasonlonsinger.files.wordpress.com/2019/10/annotation-2019-10-31-165449.pngnkjlk.png?w=1024" caption="I make a move in the top right (old pro TTT trick) and the ai makes the most optimal move." ref=""></v-img>
+<v-img src="https://jasonlonsinger.files.wordpress.com/2019/10/annotation-2019-10-31-165449.pngnkjlk.png?w=1024" caption="I make a move in the top right (old pro TTT trick) and the ai makes the most optimal move."></v-img>
 
-<v-img src="https://jasonlonsinger.files.wordpress.com/2019/10/annotation-2019-10-31-1nkjkl65449.pngnkjlk.png?w=1024" caption="Following up with a move in the bottom-left (again TTT pro here) the ai forces the path towards a tied game." ref=""></v-img>
+<v-img src="https://jasonlonsinger.files.wordpress.com/2019/10/annotation-2019-10-31-1nkjkl65449.pngnkjlk.png?w=1024" caption="Following up with a move in the bottom-left (again TTT pro here) the ai forces the path towards a tied game."></v-img>
 
 I used a pretty common OOP process that one of the best professors in the world, Prof. David North (O.C.) wanted everyone in my class to understand.
 

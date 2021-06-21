@@ -21,13 +21,13 @@ There are security flaws built right into the project as python lacks low level 
 <v-col>
     <v-carousel>
         <v-carousel-item>
-            <v-img max-height="50vh" contain src="https://jasonlonsinger.files.wordpress.com/2019/10/fhakjdfhjkasdhk.png?w=285" caption="The UI for the notepad." ref=""></v-img>
+            <v-img max-height="50vh" contain src="https://jasonlonsinger.files.wordpress.com/2019/10/fhakjdfhjkasdhk.png?w=285"></v-img>
         </v-carousel-item>
         <v-carousel-item>
-            <v-img max-height="50vh" contain src="https://jasonlonsinger.files.wordpress.com/2019/10/kadfkjsd.png?w=288" caption="Password field and encryption modes." ref=""></v-img>
+            <v-img max-height="50vh" contain src="https://jasonlonsinger.files.wordpress.com/2019/10/kadfkjsd.png?w=288"></v-img>
         </v-carousel-item>
         <v-carousel-item>
-            <v-img max-height="50vh" contain src="https://jasonlonsinger.files.wordpress.com/2019/10/uigjhgj.png?w=709" caption="The encrypted data as a json object for ease of reading / debugging." ref=""></v-img>
+            <v-img max-height="50vh" contain src="https://jasonlonsinger.files.wordpress.com/2019/10/uigjhgj.png?w=709"></v-img>
         </v-carousel-item>
     </v-carousel>
 </v-col>

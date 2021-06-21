@@ -11,7 +11,7 @@ author:
 createdAt: 2019-07-05T14:48:00.000Z
 ---
 
-<p><span style="color: #ff4d4f">
-<v-img contain src="https://jasonlonsinger.files.wordpress.com/2019/07/blacksun.png" caption="Based off the swords of sanghelios from Halo. " ref="">
+<v-img contain src="https://jasonlonsinger.files.wordpress.com/2019/07/blacksun.png"></v-img>
 
-</span></p><p>Design Process:</p><p>The base shape was drawn in Gravit Designer. I then rendered it out, threw it in inkscape, and used trace bitmap to give it the jagged corrupted detailing.</p>
+Design Process:
+The base shape was drawn in Gravit Designer. I then rendered it out, threw it in inkscape, and used trace bitmap to give it the jagged corrupted detailing.

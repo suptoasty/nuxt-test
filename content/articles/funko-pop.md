@@ -22,12 +22,12 @@ About 3-6 hours into making this model, I decided to cut corners and moved the s
 Here's the final results using Cycles:
 <v-carousel>
     <v-carousel-item>
-        <v-img contain src="https://jasonlonsinger.files.wordpress.com/2020/05/josh-pop-test-render-1.png?w=1024" caption="Unbaked Lighting" ref="">
+        <v-img contain src="https://jasonlonsinger.files.wordpress.com/2020/05/josh-pop-test-render-1.png?w=1024"></v-img>
     </v-carousel-item>
     <v-carousel-item>
-        <v-img contain src="https://jasonlonsinger.files.wordpress.com/2020/05/josh-pop-render-final-1.png?w=1024" caption="Baked Lighting" ref="">
+        <v-img contain src="https://jasonlonsinger.files.wordpress.com/2020/05/josh-pop-render-final-1.png?w=1024"></v-img>
     </v-carousel-item>
     <v-carousel-item>
-        <v-img contain src="https://jasonlonsinger.files.wordpress.com/2020/05/josh-pop-test-reneder-1.png?w=1024" caption="Forgot to disable shadows for decal, oops!" ref="">
+        <v-img contain src="https://jasonlonsinger.files.wordpress.com/2020/05/josh-pop-test-reneder-1.png?w=1024"></v-img>
     </v-carousel-item>
 </v-carousel>

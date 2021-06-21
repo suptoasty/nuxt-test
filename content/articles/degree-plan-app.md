@@ -20,12 +20,12 @@ We all used agile / scrum methodology for each team. My team worked well with ea
 
 We split the team into two roles: backend and frontend programmers. I had the most frontend experience out of the rest of the team. This led me to volunteer for the backend development. My partner on this area started by creating our data model. Here it is:
 
-<dynamic-image src="tools-degree-plan.png" caption="" ref=""></dynamic-image>
+<dynamic-image src="tools-degree-plan.png"></dynamic-image>
 
 He made some test data based off this model. We revised, wrote, revised, etc.
 
 Eventually we finished the backend and we started helping the frontend team finish up the bells and whistles of the project. For a better look at the project here are the GitHub repos:
 
-Here is the frontend: <a href="https://github.com/suptoasty/tools-vue-frontend" rel="noopener noreferrer nofollow">suptoasty/tools-vue-frontend (github.com)</a>
+Here is the frontend: <a href="https://github.com/suptoasty/tools-vue-frontend">suptoasty/tools-vue-frontend (github.com)</a>
 
-Here is the backend: <a href="https://github.com/suptoasty/tools-node-backend" rel="noopener noreferrer nofollow">suptoasty/tools-node-backend (github.com)</a>
+Here is the backend: <a href="https://github.com/suptoasty/tools-node-backend">suptoasty/tools-node-backend (github.com)</a>
