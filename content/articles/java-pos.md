@@ -11,5 +11,18 @@ author:
 createdAt: 2019-10-31T14:48:00.000Z
 ---
 
+Here is a java point of sales concept. Not for actual use.
 
-<p>Here is a java point of sales concept. Not for actual use.</p><p>Made with Java, Swing, and the <a href="https://github.com/LGoodDatePicker/LGoodDatePicker.git" rel="noopener noreferrer nofollow">LGoodDatePicker</a>.</p><p><v-img contain src="https://jasonlonsinger.files.wordpress.com/2019/10/annotation-2019-10-31-164021-1.png?w=1024" caption="" ref=""><v-img contain src="https://jasonlonsinger.files.wordpress.com/2019/10/nnn-1.png?w=1024" caption="" ref=""><v-img contain src="https://jasonlonsinger.files.wordpress.com/2019/10/nnn.pngjkjkj.png?w=1024" caption="" ref=""></p>
+Made with Java, Swing, and the <a href="https://github.com/LGoodDatePicker/LGoodDatePicker.git" rel="noopener noreferrer nofollow">LGoodDatePicker</a>.
+
+<v-carousel>
+    <v-carousel-item>
+        <v-img contain src="https://jasonlonsinger.files.wordpress.com/2019/10/annotation-2019-10-31-164021-1.png?w=1024" caption="" ref=""></v-img>
+    </v-carousel-item>
+    <v-carousel-item>
+        <v-img contain src="https://jasonlonsinger.files.wordpress.com/2019/10/nnn-1.png?w=1024" caption="" ref=""></v-img>
+    </v-carousel-item>
+    <v-carousel-item>
+        <v-img contain src="https://jasonlonsinger.files.wordpress.com/2019/10/nnn.pngjkjkj.png?w=1024" caption="" ref=""></v-img>
+    </v-carousel-item>
+</v-carousel>

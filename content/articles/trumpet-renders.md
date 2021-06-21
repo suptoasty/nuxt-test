@@ -11,5 +11,38 @@ author:
 createdAt: 2018-03-06T14:03:00.000Z
 ---
 
-
-<p data-text-align="justify"><v-img contain src="https://jasonlonsinger.files.wordpress.com/2019/07/e57dd-tumpet1.jpeg" caption="" ref=""></p><p><v-img contain src="https://jasonlonsinger.files.wordpress.com/2019/07/b5b7f-tttt.jpeg" caption="" ref=""></p><p><v-img contain src="https://jasonlonsinger.files.wordpress.com/2019/07/b8b0d-trumpet2.jpeg" caption="" ref=""></p><p><v-img contain src="https://jasonlonsinger.files.wordpress.com/2019/07/255a6-trumpet1.jpeg" caption="" ref=""></p><p><v-img contain src="https://jasonlonsinger.files.wordpress.com/2019/07/20558-trumpet_zoom.jpeg" caption="" ref=""></p><p><v-img contain src="https://jasonlonsinger.files.wordpress.com/2019/07/cropped-23cb5-trumpet_zoom.jpeg" caption="" ref=""></p><p><v-img contain src="https://jasonlonsinger.files.wordpress.com/2019/07/a3788-terunnp.jpeg" caption="" ref=""></p><p><v-img contain src="https://jasonlonsinger.files.wordpress.com/2019/07/d08ec-tumpet1.jpeg" caption="" ref=""></p><p><v-img contain src="https://jasonlonsinger.files.wordpress.com/2019/07/64b94-hi.jpeg" caption="" ref=""></p><p><v-img contain src="https://jasonlonsinger.files.wordpress.com/2019/07/c021d-dddddd.jpeg" caption="" ref=""></p><p><v-img contain src="https://jasonlonsinger.files.wordpress.com/2019/07/e57dd-tumpet1.jpeg" caption="" ref=""></p><p></p>
+<v-carousel>
+    <v-carousel-item>
+        <v-img contain src="https://jasonlonsinger.files.wordpress.com/2019/07/e57dd-tumpet1.jpeg" caption="" ref=""></v-img>
+    </v-carousel-item>
+    <v-carousel-item>
+        <v-img contain src="https://jasonlonsinger.files.wordpress.com/2019/07/b5b7f-tttt.jpeg" caption="" ref=""></v-img>
+    </v-carousel-item>
+    <v-carousel-item>
+        <v-img contain src="https://jasonlonsinger.files.wordpress.com/2019/07/b8b0d-trumpet2.jpeg" caption="" ref=""></v-img>
+    </v-carousel-item>
+    <v-carousel-item>
+        <v-img contain src="https://jasonlonsinger.files.wordpress.com/2019/07/255a6-trumpet1.jpeg" caption="" ref=""></v-img>
+    </v-carousel-item>
+    <v-carousel-item>
+        <v-img contain src="https://jasonlonsinger.files.wordpress.com/2019/07/20558-trumpet_zoom.jpeg" caption="" ref=""></v-img>
+    </v-carousel-item>
+    <v-carousel-item>
+        <v-img contain src="https://jasonlonsinger.files.wordpress.com/2019/07/cropped-23cb5-trumpet_zoom.jpeg" caption="" ref=""></v-img>
+    </v-carousel-item>
+    <v-carousel-item>
+        <v-img contain src="https://jasonlonsinger.files.wordpress.com/2019/07/a3788-terunnp.jpeg" caption="" ref=""></v-img>
+    </v-carousel-item>
+    <v-carousel-item>
+        <v-img contain src="https://jasonlonsinger.files.wordpress.com/2019/07/d08ec-tumpet1.jpeg" caption="" ref=""></v-img>
+    </v-carousel-item>
+    <v-carousel-item>
+        <v-img contain src="https://jasonlonsinger.files.wordpress.com/2019/07/64b94-hi.jpeg" caption="" ref="">
+    </v-carousel-item>
+    <v-carousel-item>
+        <v-img contain src="https://jasonlonsinger.files.wordpress.com/2019/07/c021d-dddddd.jpeg" caption="" ref=""></v-img>
+    </v-carousel-item>
+    <v-carousel-item>
+        <v-img contain src="https://jasonlonsinger.files.wordpress.com/2019/07/e57dd-tumpet1.jpeg" caption="" ref=""></v-img>
+    </v-carousel-item>
+</v-carousel>

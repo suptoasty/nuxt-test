@@ -11,6 +11,12 @@ author:
 createdAt: 2020-12-25T14:48:00.000Z
 ---
 
-<p>Why!? Because!?</p><p>No, this was a fun test of the Model View Controller Pattern and an exploration of UX design.</p><p>JavaFX and Java 8 &gt; are required.</p><p>Here is the repo: <a href="https://github.com/suptoasty/JImageViewer" rel="noopener noreferrer nofollow">suptoasty/JImageViewer (github.com)</a></p><p>
+Why!? Because!?
+
+No, this was a fun test of the Model View Controller Pattern and an exploration of UX design.
+
+JavaFX and Java 8 &gt; are required.
+
+Here is the repo: <a href="https://github.com/suptoasty/JImageViewer" rel="noopener noreferrer nofollow">suptoasty/JImageViewer (github.com)</a>
+
 <dynamic-image src="jimage-viewer.png"></dynamic-image>
-</p>
