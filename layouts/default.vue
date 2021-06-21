@@ -1,8 +1,8 @@
 <template>
 	<v-app dark>
-		<navbar />
+		<!-- <navbar /> -->
 		<v-main>
-			<v-container fluid>
+			<v-container fluid style="height: 100%">
 				<nuxt />
 			</v-container>
 		</v-main>
@@ -11,7 +11,7 @@
 
 <script>
 export default {
-	mounted() {
+	beforeMount() {
 		this.$vuetify.theme.dark = this.$store.state.darkTheme
 	},
 }

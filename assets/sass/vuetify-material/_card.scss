@@ -1,14 +1,14 @@
 .v-card {
-  border-radius: 6px;
-  margin-top: 30px;
-  margin-bottom: 15px;
+  // border-radius: 6px;
+  // margin-top: 30px;
+  // margin-bottom: 15px;
 
   .card-title {
     font-size: 18px;
   }
 
   .v-card--material__heading {
-    top: -30px;
+    // top: -30px;
 
     .subtitle-1 {
       color: hsla(0, 0%, 100%, 0.8);
@@ -58,11 +58,11 @@
 .v-card__title {
   font-size: 18px;
   padding-top: 7px;
-  padding-bottom: 2px;
+  // padding-bottom: 2px;
 }
 .theme--light {
   .v-card > .v-card__text {
-    color: #333;
+    color: rgb(80, 80, 80);
   }
   .card-title {
     color: #3c4858;
@@ -141,4 +141,27 @@
 
 .ct-square:before {
   float: none;
+}
+
+.v-card--glass {
+  border: $card-border;
+  box-shadow: $card-box-shadow;
+  backdrop-filter: $card-backdrop-filter;
+  border-radius: $card-border-radius;
+}
+
+.v-card--glass.theme--light {
+  background: $card-background-light;
+}
+
+.v-card--glass.theme--dark {
+  background: $card-background-dark;
+}
+
+.v-card.v-sheet.v-card-background {
+  backdrop-filter: blur(10px);
+  border-radius: 0em;
+  border: solid 0px transparent;
+  width: 100%;
+  margin: 0;
 }

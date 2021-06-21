@@ -12,80 +12,36 @@
 @import 'vuetify-material/modal';
 @import 'vuetify-material/map';
 @import 'vuetify-material/chip';
+@import 'vuetify-material/app';
 
-.v-btn.v-size--default .v-btn.v-size--large {
-  &:not(.v-btn--icon):not(.v-btn--fab) {
-    padding: 0 30px !important;
-  }
-}
+// .v-btn.v-size--default .v-btn.v-size--large {
+//   &:not(.v-btn--icon):not(.v-btn--fab) {
+//     padding: 0 30px !important;
+//   }
+// }
 
-.theme--light.v-list-item .v-list-item__action-text,
-.theme--light.v-list-item .v-list-item__subtitle {
-  color: #999;
-}
+// .theme--light.v-list-item .v-list-item__action-text,
+// .theme--light.v-list-item .v-list-item__subtitle {
+//   color: #999;
+// }
 
-.theme--light.v-text-field > .v-input__control > .v-input__slot:before {
-  border-color: #d2d2d2;
-}
+// .theme--light.v-text-field > .v-input__control > .v-input__slot:before {
+//   border-color: #d2d2d2;
+// }
 
-.v-label.v-label,
-.v-alert.v-alert {
-  font-size: $font-size-root;
-}
+// .v-label.v-label,
+// .v-alert.v-alert {
+//   font-size: $font-size-root;
+// }
 
-.theme--light .v-content {
-  background-color: #eee;
-}
+// .theme--light .v-content {
+//   background-color: #eee;
+// }
 
-.v-card.v-sheet {
-  border: $card-border;
-  box-shadow: $card-box-shadow;
-  backdrop-filter: $card-backdrop-filter;
-  border-radius: $card-border-radius;
-}
-
-.v-card.v-sheet.theme--light {
-  background: $card-background-light;
-}
-
-.v-card.v-sheet.theme--dark {
-  background: $card-background-dark;
-}
-
-.v-main {
-  // background: linear-gradient(to right, blue, red);
-  background-repeat: no-repeat;
-  background-size: auto;
-  background: linear-gradient(90deg, red, blue);
-  // background-image: url('https://picsum.photos/1920/1080.jpg');
-}
-
-.v-app-bar {
-  border-bottom: $app-bar-border;
-  box-shadow: $app-bar-box-shadow;
-  backdrop-filter: $app-bar-backdrop-filter;
-  border-radius: $app-bar-border-radius;
-}
-
-.v-app-bar.v-app-bar--is-scrolled {
-  border-bottom: $app-bar-border;
-  box-shadow: $app-bar-box-shadow;
-  backdrop-filter: $app-bar-backdrop-filter;
-  border-radius: $app-bar-border-radius;
-  opacity: 0.85;
-}
-
-.v-app-bar.v-app-bar--is-scrolled.theme--light {
-  background: $app-bar-background-scrolled-light;
-}
-
-.v-app-bar.v-app-bar--is-scrolled.theme--dark {
-  background: $app-bar-background-scrolled-dark;
-}
-
-.v-app-bar.theme--light {
-  background: $app-bar-background-light;
-}
-.v-app-bar.theme--dark {
-  background: $app-bar-background-dark;
-}
+// .v-main {
+//   // background: linear-gradient(to right, blue, red);
+//   background-repeat: no-repeat;
+//   background-size: auto;
+//   background: linear-gradient(90deg, red, blue);
+//   // background-image: url('https://picsum.photos/1920/1080.jpg');
+// }

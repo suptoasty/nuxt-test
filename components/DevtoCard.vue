@@ -7,6 +7,11 @@
 		min-width="300"
 		min-height="300"
 	>
+		<v-img
+			max-height="25%"
+			:src="article.image"
+			v-if="article && article.image"
+		></v-img>
 		<v-card-title>{{ title }}</v-card-title>
 		<v-card-subtitle>{{ description }}</v-card-subtitle>
 	</v-card>
@@ -15,6 +20,10 @@
 <script>
 export default {
 	props: {
+		article: {
+			type: Object,
+			default: () => null,
+		},
 		title: {
 			type: String,
 			default: '',
@@ -35,3 +44,9 @@ export default {
 }
 </script>
 
+
+<style lang="scss" scoped>
+.v-card.v-sheet {
+	border-radius: 1em;
+}
+</style>

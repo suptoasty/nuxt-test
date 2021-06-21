@@ -1,6 +1,6 @@
 <template>
-	<v-container>
-		<v-img
+	<v-row style="height: 100%">
+		<!-- <v-img
 			id="img"
 			src="https://assets.codepen.io/2621168/abstract.jpg"
 			style="
@@ -12,15 +12,29 @@
 				left: 0;
 			"
 			v-if="!$vuetify.breakpoint.mobile"
-		/>
-		<v-card id="card" class="ma-2 pa-2">
+		/> -->
+		<v-card class="v-card--glass v-card-background pa-4">
+			<v-container fluid>
+				<v-row>
+					<v-col>
+						<navbar-card />
+					</v-col>
+				</v-row>
+				<v-row>
+					<v-col>
+						<nuxt-content :document="content" />
+					</v-col>
+				</v-row>
+			</v-container>
+		</v-card>
+		<!-- <v-card id="card" class="ma-2 pa-2">
 			<v-row justify="center" align="center" class="ma-2 pa-2">
 				<v-col xl="12" lg="12" md="12" sm="12" xs="12" class="ma-2 pa-2">
 					<nuxt-content :document="content" />
 				</v-col>
 			</v-row>
-		</v-card>
-	</v-container>
+		</v-card> -->
+	</v-row>
 </template>
 
 <script>
@@ -157,7 +171,10 @@ export default {
 <style lang='scss'>
 @import '@/assets/sass/overrides.scss';
 
-.v-main {
-	background-image: url('https://picsum.photos/1920/1080.jpg');
-}
+// .v-main {
+// 	background-image: url('~/static/1080.jpg');
+// 	background-repeat: no-repeat;
+// 	background-size: cover;
+// 	background-attachment: fixed;
+// }
 </style>
