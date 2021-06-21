@@ -97,14 +97,8 @@ export default {
 		// 	duration: 2000,
 		// })
 	},
-	methods: {
-		createPost() {
-			console.log('figure out dynamic in ssg???')
-		},
-	},
 }
 </script>
 
-<style lang='scss'>
-@import '@/assets/sass/overrides.scss';
+<style lang="scss" scoped>
 </style>

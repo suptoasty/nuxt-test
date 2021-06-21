@@ -18,7 +18,9 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: [
+    '~/assets/sass/overrides',
+  ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: ['~/plugins/anime.js', { src: '~/plugins/vuex-persist.client' }],
@@ -107,8 +109,7 @@ export default {
   vuetify: {
     customVariables: [
       '~/assets/variables.scss',
-      '~/assets/sass/variables.scss',
-      '~/assets/sass/overrides.scss',
+      // '~/assets/sass/variables.scss',
     ],
     theme: {
       dark: false,
@@ -136,5 +137,9 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    extractCSS: {
+      ignoreOrder: false
+    }
+  },
 }

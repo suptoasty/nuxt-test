@@ -168,13 +168,5 @@ export default {
 </script>
 
 
-<style lang='scss'>
-@import '@/assets/sass/overrides.scss';
-
-// .v-main {
-// 	background-image: url('~/static/1080.jpg');
-// 	background-repeat: no-repeat;
-// 	background-size: cover;
-// 	background-attachment: fixed;
-// }
+<style lang="scss" scoped>
 </style>

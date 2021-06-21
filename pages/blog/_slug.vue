@@ -62,6 +62,5 @@ export default {
 }
 </script>
 
-<style lang='scss'>
-@import '@/assets/sass/overrides.scss';
+<style lang='scss' scoped>
 </style>
