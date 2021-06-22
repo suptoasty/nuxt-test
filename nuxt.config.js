@@ -109,7 +109,7 @@ export default {
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
     customVariables: [
-      '~/assets/variables',
+      // '~/assets/variables',
       // '~/assets/sass/variables.scss',
     ],
     // treeShake: true,
@@ -174,7 +174,7 @@ export default {
 
     vuetify: {
     customVariables: [
-      '~/assets/variables',
+      // '~/assets/variables',
       // '~/assets/sass/variables.scss',
     ],
     // treeShake: true,
