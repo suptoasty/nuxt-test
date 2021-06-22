@@ -19,14 +19,14 @@ I've reworked these so they wouldn't use trademarked materials like the Chrome a
        
 <v-img contain src="https://jasonlonsinger.files.wordpress.com/2019/07/desktop.png"></v-img>
 
-<v-img contain src="https://jasonlonsinger.files.wordpress.com/2019/07/desktop_menus-1.png" />
+<v-img contain src="https://jasonlonsinger.files.wordpress.com/2019/07/desktop_menus-1.png"></v-img>
 
 <no-ssr>
     <v-img contain src="https://jasonlonsinger.files.wordpress.com/2019/07/main-1.png"></v-img>
 </no-ssr>
 
 <no-ssr>
-    <v-img contain src="https://jasonlonsinger.files.wordpress.com/2019/07/main-1.png" />
+    <v-img contain src="https://jasonlonsinger.files.wordpress.com/2019/07/main-1.png"></v-img>
 </no-ssr>
 
 <img src="https://jasonlonsinger.files.wordpress.com/2019/07/notes-1.png"></img>
