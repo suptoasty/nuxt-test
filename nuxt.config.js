@@ -110,12 +110,10 @@ export default {
   vuetify: {
     customVariables: [
       // '~/assets/variables',
-      // '~/assets/sass/variables.scss',
+      '~/assets/sass/variables',
     ],
+    customProperties: true,
     // treeShake: true,
-    options: {
-      customProperties: true,
-    },
     theme: {
       dark: false,
       themes: {
@@ -143,44 +141,15 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    axios: {
-        // baseURL: "",
-        proxy: {
-          // '/devto/': { target: 'https://dev.to', pathRewrite: { '^/api/': '' } },
-          // '/devto/': 'https://dev.to/api',
-        },
-        common: {
-          Accept: 'application/json, text/plain, */*',
-          'Content-Type': 'application/json',
-          Authorization: 'Bearer ' + process.env.NUXT_ENV_DEVTO_API_KEY,
-          'X-Requested-With': 'XMLHttpRequest',
-          crossDomain: true,
-          'Access-Control-Allow-Origin': '*',
-        },
-        delete: {},
-        get: {},
-        head: {},
-        post: {},
-        put: {},
-        patch: {},
-      },
-
-    css: [
-    '~/assets/sass/overrides',
-  ],
-    extractCSS: {
-      ignoreOrder: false
-    },
-
+    analyze:true,
+    extractCSS: true,
     vuetify: {
     customVariables: [
       // '~/assets/variables',
-      // '~/assets/sass/variables.scss',
+      '~/assets/sass/variables',
     ],
+    customProperties: true,
     // treeShake: true,
-    options: {
-      customProperties: true,
-    },
     theme: {
       dark: false,
       themes: {
