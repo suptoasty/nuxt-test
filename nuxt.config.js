@@ -143,8 +143,67 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    axios: {
+        // baseURL: "",
+        proxy: {
+          // '/devto/': { target: 'https://dev.to', pathRewrite: { '^/api/': '' } },
+          // '/devto/': 'https://dev.to/api',
+        },
+        common: {
+          Accept: 'application/json, text/plain, */*',
+          'Content-Type': 'application/json',
+          Authorization: 'Bearer ' + process.env.NUXT_ENV_DEVTO_API_KEY,
+          'X-Requested-With': 'XMLHttpRequest',
+          crossDomain: true,
+          'Access-Control-Allow-Origin': '*',
+        },
+        delete: {},
+        get: {},
+        head: {},
+        post: {},
+        put: {},
+        patch: {},
+      },
+
+    css: [
+    '~/assets/sass/overrides',
+  ],
     extractCSS: {
       ignoreOrder: false
-    }
+    },
+
+    vuetify: {
+    customVariables: [
+      '~/assets/variables',
+      // '~/assets/sass/variables.scss',
+    ],
+    // treeShake: true,
+    options: {
+      customProperties: true,
+    },
+    theme: {
+      dark: false,
+      themes: {
+        dark: {
+          primary: colors.blue.darken2,
+          accent: colors.grey.darken3,
+          secondary: colors.amber.darken3,
+          info: colors.teal.lighten1,
+          warning: colors.amber.base,
+          error: colors.deepOrange.accent4,
+          success: colors.green.accent3,
+        },
+        light: {
+          primary: colors.blue.darken2,
+          accent: colors.grey.darken3,
+          secondary: colors.amber.darken3,
+          info: colors.teal.lighten1,
+          warning: colors.amber.base,
+          error: colors.deepOrange.accent4,
+          success: colors.green.accent3,
+        },
+      },
+    },
+  },
   },
 }
