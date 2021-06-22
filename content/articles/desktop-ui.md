@@ -16,27 +16,45 @@ Made with Gravit Designer Papirus icon theme is also used.
 
 <h3>Original Design:</h3>
 I've reworked these so they wouldn't use trademarked materials like the Chrome and Spotify logos. (See below)
+       
+<v-img contain src="https://jasonlonsinger.files.wordpress.com/2019/07/desktop.png"></v-img>
+
+<v-img contain src="https://jasonlonsinger.files.wordpress.com/2019/07/desktop_menus-1.png" />
+
+<no-ssr>
+    <v-img contain src="https://jasonlonsinger.files.wordpress.com/2019/07/main-1.png"></v-img>
+</no-ssr>
+
+<no-ssr>
+    <v-img contain src="https://jasonlonsinger.files.wordpress.com/2019/07/main-1.png" />
+</no-ssr>
+
+<img src="https://jasonlonsinger.files.wordpress.com/2019/07/notes-1.png"></img>
+
+<img  src="https://jasonlonsinger.files.wordpress.com/2019/07/notifications-1.png" />
+
+<no-ssr>
+    <img src="https://jasonlonsinger.files.wordpress.com/2019/07/other.png"></img>
+</no-ssr>
+
+<no-ssr>
+    <img  src="https://jasonlonsinger.files.wordpress.com/2019/07/window.png" />
+</no-ssr>
+
 <v-carousel>
     <v-carousel-item>
-        <v-img contain src="https://jasonlonsinger.files.wordpress.com/2019/07/desktop.png"></v-img>
     </v-carousel-item>
     <v-carousel-item>
-        <v-img contain src="https://jasonlonsinger.files.wordpress.com/2019/07/desktop_menus-1.png"></v-img>
     </v-carousel-item>
     <v-carousel-item>
-        <v-img contain src="https://jasonlonsinger.files.wordpress.com/2019/07/main-1.png"></v-img>
     </v-carousel-item>
     <v-carousel-item>
-        <v-img contain src="https://jasonlonsinger.files.wordpress.com/2019/07/notes-1.png"></v-img>
     </v-carousel-item>
     <v-carousel-item>
-        <v-img contain src="https://jasonlonsinger.files.wordpress.com/2019/07/notifications-1.png"></v-img>
     </v-carousel-item>
     <v-carousel-item>
-        <v-img contain src="https://jasonlonsinger.files.wordpress.com/2019/07/other.png"></v-img>
     </v-carousel-item>
     <v-carousel-item>
-        <v-img contain src="https://jasonlonsinger.files.wordpress.com/2019/07/window.png"></v-img>
     </v-carousel-item>
 </v-carousel>
 
