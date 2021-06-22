@@ -142,5 +142,10 @@ export default {
     extractCSS: {
       ignoreOrder: false,
     },
+    minifyCSS: true,
+    minifyJS: true,
+    removeEmptyAttributes: true,
+    removeRedundantAttributes: true,
+    indicator: true,
   },
 }
