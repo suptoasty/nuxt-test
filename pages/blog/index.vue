@@ -1,48 +1,42 @@
 <template>
-	<v-row>
-		<v-card class="v-card--glass v-card-background">
-			<v-container fluid>
-				<v-row class="pa-4">
-					<navbar-card class="pa-4" />
-					<v-col cols="12">
-						<h1>Personal Projects</h1>
-					</v-col>
-					<v-col>
-						<search-bar />
-					</v-col>
-				</v-row>
-				<v-row justify="center" align="center" align-content="center">
-					<v-col
-						align-self="center"
-						xl="2"
-						lg="4"
-						md="6"
-						sm="12"
-						xs="12"
-						v-for="article in articles"
-						:key="article.slug"
-					>
-						<v-lazy>
-							<devto-card
-								v-if="!!article.id"
-								:article="article"
-								:id="article.id"
-								:title="article.title"
-								:description="article.description"
-							/>
-							<blog-card
-								v-else
-								:article="article"
-								:route="article.slug"
-								:title="article.title"
-								:description="article.description"
-							/>
-						</v-lazy>
-					</v-col>
-				</v-row>
-			</v-container>
-		</v-card>
-	</v-row>
+	<div>
+		<navbar-card class="pa-4" />
+		<v-col cols="12" class="unblurText">
+			<h1>Personal Projects</h1>
+		</v-col>
+		<v-col>
+			<search-bar />
+		</v-col>
+		<v-row justify="center" align="center" align-content="center">
+			<v-col
+				align-self="center"
+				xl="2"
+				lg="4"
+				md="6"
+				sm="12"
+				xs="12"
+				v-for="article in articles"
+				:key="article.slug"
+			>
+				<v-lazy>
+					<devto-card
+						v-if="!!article.id"
+						:article="article"
+						:id="article.id"
+						:title="article.title"
+						:description="article.description"
+					/>
+					<blog-card
+						v-else
+						:article="article"
+						:route="article.slug"
+						:title="article.title"
+						:description="article.description"
+					/>
+				</v-lazy>
+			</v-col>
+		</v-row>
+	</div>
 </template>
 
 <script>

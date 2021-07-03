@@ -1,5 +1,5 @@
 <template>
-	<v-row style="height: 100%">
+	<div>
 		<!-- <v-img
 			id="img"
 			src="https://assets.codepen.io/2621168/abstract.jpg"
@@ -13,28 +13,13 @@
 			"
 			v-if="!$vuetify.breakpoint.mobile"
 		/> -->
-		<v-card class="v-card--glass v-card-background pa-4">
-			<v-container fluid>
-				<v-row>
-					<v-col>
-						<navbar-card />
-					</v-col>
-				</v-row>
-				<v-row>
-					<v-col>
-						<nuxt-content :document="content" />
-					</v-col>
-				</v-row>
-			</v-container>
-		</v-card>
-		<!-- <v-card id="card" class="ma-2 pa-2">
-			<v-row justify="center" align="center" class="ma-2 pa-2">
-				<v-col xl="12" lg="12" md="12" sm="12" xs="12" class="ma-2 pa-2">
-					<nuxt-content :document="content" />
-				</v-col>
-			</v-row>
-		</v-card> -->
-	</v-row>
+		<navbar-card class="pa-4" />
+		<v-row>
+			<v-col>
+				<nuxt-content :document="content" />
+			</v-col>
+		</v-row>
+	</div>
 </template>
 
 <script>

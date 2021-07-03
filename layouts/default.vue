@@ -2,7 +2,12 @@
 	<v-app dark>
 		<!-- <navbar /> -->
 		<v-main>
-			<v-container fluid style="height: 100%">
+			<v-card
+				id="background-card"
+				class="v-card--glass v-card-background"
+				style="height: 100%; width: 100%; position: absolute"
+			></v-card>
+			<v-container fluid>
 				<nuxt />
 			</v-container>
 		</v-main>

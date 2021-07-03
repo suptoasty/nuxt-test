@@ -1,44 +1,38 @@
 <template>
-	<v-row class="height: 100% !important">
-		<v-card
-			class="v-card--glass v-card-background"
-			style="height: 100% !important"
-		>
-			<v-container fluid>
-				<v-row class="ma-1">
-					<navbar-card class="pa-4" />
+	<div class="unblurText">
+		<navbar-card class="pa-4" />
+		<v-container fluid>
+			<v-row align-content="center" align="center" justify="center">
+				<v-col lg="12" md="12" sm="12" xs="12">
+					<h1>
+						{{ article.title }}
+					</h1>
+					<span>
+						<h4>{{ article.description }}</h4>
+						<h4>Created On: {{ formatDate(article.createdAt) }}</h4>
+					</span>
+				</v-col>
+			</v-row>
+			<v-divider class="ma-1"></v-divider>
+			<v-container>
+				<v-row justify="center">
+					<v-col cols="12">
+						<nuxt-content :document="article" />
+					</v-col>
 				</v-row>
-				<v-container>
-					<v-row align-content="center" align="center" justify="center">
-						<v-col lg="12" md="12" sm="12" xs="12">
-							<h1>
-								{{ article.title }}
-							</h1>
-							<span>
-								<h4>{{ article.description }}</h4>
-								<h4>Created On: {{ formatDate(article.createdAt) }}</h4>
-							</span>
-							<v-divider />
-						</v-col>
-					</v-row>
-					<v-row justify="center">
-						<v-col cols="12">
-							<nuxt-content :document="article" />
-						</v-col>
-					</v-row>
-					<v-row justify="center" align="center" align-content="center">
-						<v-col cols="12">
-							<author :author="article.author" v-if="!!article.author" />
-						</v-col>
-					</v-row>
-				</v-container>
-
-				<!-- <v-row>
-					<prev-next :next="next" :prev="prev" />
-				</v-row> -->
 			</v-container>
-		</v-card>
-	</v-row>
+			<v-spacer></v-spacer>
+			<v-divider class="ma-1"></v-divider>
+			<v-row justify="center" align="center" align-content="center">
+				<v-col cols="6">
+					<author :author="article.author" v-if="!!article.author" />
+				</v-col>
+				<v-col cols="6">
+					<prev-next :next="next" :prev="prev" />
+				</v-col>
+			</v-row>
+		</v-container>
+	</div>
 </template>
 
 <script>

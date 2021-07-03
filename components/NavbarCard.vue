@@ -1,5 +1,5 @@
 <template>
-	<v-row>
+	<v-row class="unblurText">
 		<v-row class="pa-2" v-if="!$vuetify.breakpoint.mobile">
 			<v-btn icon nuxt :to="{ name: 'index' }" class="mr-2">
 				<v-icon large>mdi-home</v-icon>
@@ -96,3 +96,5 @@ export default {
 }
 </script>
 
+<style lang="scss" scoped>
+</style>

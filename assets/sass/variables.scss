@@ -107,3 +107,8 @@ $app-bar-background-scrolled-light: linear-gradient(
     rgba(255, 255, 255, 0.3) 100%
   )
   padding-box !default;
+
+.unblurText {
+  -webkit-font-smoothing: subpixel-antialiased;
+  transform: translate3d(0%, 0%, 0);
+}
