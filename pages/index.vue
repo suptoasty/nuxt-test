@@ -16,7 +16,7 @@
 		<navbar-card class="pa-4" />
 		<v-row>
 			<v-col>
-				<nuxt-content :document="content" />
+				<nuxt-content :document="content" class="unblurText" />
 			</v-col>
 		</v-row>
 	</div>
