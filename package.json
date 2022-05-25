@@ -17,7 +17,7 @@
     "@nuxtjs/proxy": "^2.1.0",
     "@nuxtjs/pwa": "^3.3.5",
     "animejs": "^3.2.1",
-    "core-js": "^3.9.1",
+    "core-js": "^3.22.7",
     "nuxt": "^2.15.3",
     "nuxt-i18n": "^6.27.0",
     "nuxt-purgecss": "^1.0.0",
